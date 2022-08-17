@@ -28,7 +28,7 @@ if not os.path.exists("./extreme-alarm-sound.mp3"):
 while True:
     for process in psutil.process_iter():
         if process.name()[0:12] == "LeagueClient":
-            t_end = time.time() + 30
+            t_end = time.time() + 7
             while time.time() < t_end:
                 threading.Thread(playsound.playsound(os.path.abspath("./extreme-alarm-sound.mp3")))
             break
