@@ -1,2 +1,8 @@
 playsound
 psutil
+sys
+threading
+zipfile
+time
+os
+urllib
